@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('./Quicksand-Font.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        width: 100vw;
+    }
+    #backgroundHeader{
+        background: url('./sebastian-coman-unsplash.jpg');
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+    #ul{
+        display: none;
+    }
+    #backgroundContent{
+        max-width: 100vw;
+        width: 100vw;
+        gap: 0;
+        background-color: rgba(128, 128, 128, 0.356);
+    }
+    #backgroundContent h2 {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+    #backgroundContent h3 {
+        font-size: 15px;
+    }
+
+    #homeContent{
+        display: flex;
+        flex-direction: row;
+        height: 800px;
+    }
+    #homeContentLeft{
+        width: 100vw;
+        height: 950px;
+    }
+    #homeContentRight{
+        width: 100vw;
+        height: 950px;
+    }
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+    --font-size-list: 20px;
+}
+
+.content {
+    max-width: 100vw;
+}
+
+.header {
+    background-color: rgba(87, 80, 87, 0.479);
+    color: white;
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    margin-left: 10px;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20vw;
+    margin-right: 10vw;
+    list-style: none;
+    font-size: var(--font-size-list);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+} 
+
+
+.backgroundHeader {
+    background: url('./kadir-celep-unsplash.jpg');
+    height: 100vh;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.backgroundContent {
+    max-width: 80vw;
+    display: flex;
+    width: 80vw;
+    color: white;
+    text-align: center;
+    gap: 50px;
+}
+
+.backgroundContent h3 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.reserveLink {
+    color: orange;
+    text-decoration: underline;
+}
+
+.homeContent {
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    height: 50vh;
+    display: flex;
+}
+
+.homeContentLeft {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 50vw;
+    background-color: aliceblue;
+}
+
+.homeContentLeft h1 {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.homeContentLeft h2 {
+    margin-left: 10%;
+    font-size: 20px;
+    color: rgb(148, 147, 146);
+}
+
+.homeContentLeft h3 {
+    margin-left: 10%;
+    width: 40vw;
+}
+
+
+.homeContentRight {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 50vw;
+    background: url(./jay-wennington-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
