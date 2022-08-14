@@ -54,6 +54,8 @@
 html {
     margin: 0;
     padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -61,11 +63,15 @@ body {
     padding: 0;
     font-family: 'Quicksand';
     --font-size-list: 20px;
+    --nav-text-color: gray;
+    max-width: 100vw;
 }
 
 .content {
     max-width: 100vw;
 }
+
+/* header */
 
 .header {
     background-color: rgba(87, 80, 87, 0.479);
@@ -104,25 +110,36 @@ a {
     color: white;
 } 
 
+.homeLink:hover {
+    color: var(--nav-text-color);
+}
 
+.menuLink:hover {
+    color: var(--nav-text-color);
+}
+
+.contactLink:hover {
+    color: var(--nav-text-color);
+}
+
+/* home */
 .backgroundHeader {
     background: url('./kadir-celep-unsplash.jpg');
     height: 100vh;
-    max-width: 100vw;
     padding: 0;
     margin: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: flex-end;
 }
 
 .backgroundContent {
-    max-width: 80vw;
     display: flex;
-    width: 80vw;
+    justify-content: center;
+    width: 100vw;
     color: white;
     text-align: center;
     gap: 50px;
@@ -141,7 +158,6 @@ a {
 .homeContent {
     padding: 0;
     margin: 0;
-    max-width: 100vw;
     height: 50vh;
     display: flex;
 }
@@ -180,4 +196,70 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+/* menu */
+
+.backgroundMenu {
+    background-color: rgb(31, 31, 31);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.backgroundImage {
+    background: url(./todd-quackenbush-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+}
+
+.menuContent {
+    background-color: rgb(31, 31, 31);
+    border-top: 1px solid white;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuTitle {
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+    font-size: 30px;
+}
+
+.menuTitle p {
+    font-size: 20px;
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.titleStarter {
+    margin-top: 50px;
+    color: gray;
+}
+
+.starters {
+    display: flex;
+    flex-direction: column;
+}
+
+.starters h3 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.starters p {
+    color: rgb(182, 182, 182);
+    font-size: 15px; 
+    margin-top: 0;
 }
