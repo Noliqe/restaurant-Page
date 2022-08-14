@@ -5,7 +5,7 @@ const homeScreen = () => {
     content.appendChild(background);
     background.classList.add('backgroundHome');
     background.setAttribute('id', 'background');
-    
+
     const backgroundHeader = document.createElement('div');
     background.appendChild(backgroundHeader);
 
@@ -42,7 +42,7 @@ const homeScreen = () => {
     const reserveLink = document.createElement('a');
     toReserve.appendChild(reserveLink);
     reserveLink.setAttribute('href', '#reserve');
-    reserveLink.textContent = 'Reserve';
+    reserveLink.textContent = 'Reservation';
     reserveLink.classList.add('reserveLink')
 
 

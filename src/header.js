@@ -43,7 +43,6 @@ const header = () => {
     contactLink.textContent = 'Contact';
     contact.appendChild(contactLink);
     contactLink.classList.add('contactLink');
-
 }
 
 export default header();
